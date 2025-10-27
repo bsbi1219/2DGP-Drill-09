@@ -26,11 +26,13 @@ def reset_world():
     global boy
 
     grass1 = Grass()
-    grass2 = Grass2()
-    game_world.add_objects([grass1, grass2])
+    game_world.add_objects([grass1], 0)
 
     boy = Boy()
     game_world.add_object(boy, 1)
+
+    grass2 = Grass2()
+    game_world.add_objects([grass2], 1)
 
 def update_world():
     game_world.update()

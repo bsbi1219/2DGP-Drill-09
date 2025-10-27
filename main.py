@@ -21,7 +21,6 @@ def handle_events():
         else:
             boy.handle_event(event)
 
-
 def reset_world():
     global boy
 

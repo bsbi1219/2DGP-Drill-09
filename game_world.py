@@ -8,7 +8,7 @@ def add_object(o, depth = 0): # 게임 내에 객체를 추가하는 함수
     global world
     world[depth].append(o)
 
-def add_objects(ol, depth = 0): # add_objects([ball1, ball2, ...], depth)
+def add_objects(ol, depth): # add_objects([ball1, ball2, ...], depth)
     world[depth] += ol
 
 
